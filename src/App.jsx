@@ -3,6 +3,7 @@ import Product from "./pages/Product";
 import HomePage from "./pages/HomePage";
 import Pricing from "./pages/Pricing";
 import "./App.css";
+import AppLayout from "./pages/AppLayout";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<HomePage />}></Route>
           <Route path="product" element={<Product />}></Route>
           <Route path="pricing" element={<Pricing />}></Route>
+          <Route path="app" element={<AppLayout />}></Route>
         </Routes>
       </BrowserRouter>
     </>
