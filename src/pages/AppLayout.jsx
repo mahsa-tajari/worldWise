@@ -1,5 +1,11 @@
 import React from "react";
-import styles from "./AppLayout.modules.css";
+import styles from "./AppLayout.module.css";
+import AppNav from "../components/AppNav";
 export default function AppLayout() {
-  return <div className={styles.app}>AppLayout</div>;
+  return (
+    <div>
+      <AppNav />
+      <p>App</p>
+    </div>
+  );
 }
