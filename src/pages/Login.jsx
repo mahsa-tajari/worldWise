@@ -1,6 +1,6 @@
 import styles from "./Login.module.css";
 import { useState } from "react";
-import AppNav from "../components/AppNav";
+import PageNav from "../components/PageNav";
 export default function Login() {
   // PRE-FILL FOR DEV PURPOSES
   const [email, setEmail] = useState("jack@example.com");
@@ -8,7 +8,7 @@ export default function Login() {
 
   return (
     <main className={styles.login}>
-      <AppNav />
+      <PageNav />
       <form className={styles.form}>
         <div className={styles.row}>
           <label htmlFor="email">Email address</label>
