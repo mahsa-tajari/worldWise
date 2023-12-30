@@ -1,7 +1,5 @@
-import React from 'react'
-import './'
+import React from "react";
+import styles from "./Map.module.css";
 export default function Map() {
-  return (
-    <div></div>
-  )
+  return <div className={styles.mapContainer}>MAp</div>;
 }
