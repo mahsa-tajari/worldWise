@@ -3,7 +3,9 @@ import styles from "./CountryList.module.css";
 import CountryItem from "./CountryItem";
 import Spinner from "./Spinner";
 import Message from "./Message";
-export default function CityList({ cities, isLoading }) {
+import { useCities } from "../contexts/citiesContext";
+export default function CityList() {
+  const {cities, isLoading} = useCities(); 
   const countries = cities.reduce((arr, cur) => {
     if (!arr.map((el) => el.city).includes(cur.country))
       return [...arr, { country: cur.country, emoji: cur.emoji }];
