@@ -103,12 +103,10 @@ function CitiesProvider({ children }) {
           "Content-Type": "application/json",
         },
       });
-      const data = req.json();
+      const data = await req.json();
       dispatch({ type: "city/created", payload: data });
     } catch {
       alert("There is an error sending data");
-    } finally {
-      setIsLoading(false);
     }
   }
   return (
@@ -119,7 +117,6 @@ function CitiesProvider({ children }) {
         currentCity,
         error,
         getCity,
-        useCities,
         addNewCity,
         deleteCityHandler,
       }}
