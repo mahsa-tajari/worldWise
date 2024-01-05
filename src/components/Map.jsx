@@ -17,10 +17,6 @@ import {
 export default function Map() {
   const [mapPosition, setMapPosition] = useState([40, 0]);
   const { cities } = useCities();
-
-  // const [searchParams] = useSearchParams();
-  // const lat = searchParams.get("lat");
-  // const lng = searchParams.get("lng");
   const [lat, lng] = useGetParams();
   const {
     isloading: isloadingPosition,
@@ -78,9 +74,7 @@ export default function Map() {
   function DetectClick() {
     const navigate = useNavigate();
     useMapEvents({
-      click: (e) => {
-        navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}}`);
-      },
+      click: (e) => navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
     });
   }
 }
