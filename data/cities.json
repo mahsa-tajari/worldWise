@@ -1,16 +1,3 @@
 {
-  "cities": [
-    {
-      "id": 13,
-      "cityName": "Rasht",
-      "country": "Iran (Islamic Republic of)",
-      "emoji": "🇮🇷",
-      "date": "2024-01-05T10:07:01.493Z",
-      "notes": "amazing city",
-      "position": {
-        "lat": "37.278384647307426",
-        "lng": "49.60876464843751"
-      }
-    }
-  ]
+  "cities": []
 }
